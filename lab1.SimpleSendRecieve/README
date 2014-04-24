@@ -1,0 +1,13 @@
+Prerequisites
+php 5.3.*
+
+Установка и настройка
+1. sudo apt-get install rabbitmq-server
+2. sudo gedit /etc/default/rabbitmq-server
+3. Раскомментируйте строку ulimit -n 1024. Команда ulimit задает допутсимое число открытых файлов в системе
+4. Сохраните файл.
+5. sudo service rabbitmq-server restart
+
+Запуск 
+1. php /full_path_to_send.php 
+2. php /full_path_to_recv.php
